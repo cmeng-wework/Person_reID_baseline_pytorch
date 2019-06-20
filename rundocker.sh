@@ -1,0 +1,1 @@
+docker run -it --rm --runtime=nvidia --shm-size 16G --name person_reid_baseline_pytorch -v ~/person_reid/Person_reID_baseline_pytorch:/workspace/Person_reID_baseline_pytorch -v ~/person_reid/data/Market:/workspace/Market -p 9091:9999 -p 9092:6006 -e NVIDIA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 -e CUDA_DEVICE_ORDER=PCI_BUS_ID person_reid_baseline_pytorch
