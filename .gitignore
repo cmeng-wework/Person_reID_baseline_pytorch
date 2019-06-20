@@ -32,3 +32,6 @@ core
 *.npy
 *.pt
 *.pth
+
+.DS_Store
+._.DS_Store
